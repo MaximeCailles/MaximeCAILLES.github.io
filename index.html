@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio — Game Designer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav>
+    <a href="#" class="nav-logo">Maxime CAILLES</a>
+    <ul class="nav-links">
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div style="position:relative; z-index:2;">
+      <p class="hero-tag">// Créateur de jeux - Game & Narrative Designer</p>
+      <h1 class="hero-title">Je crée des<br><span>expériences</span><br>qui marquent.</h1>
+      <p class="hero-sub">Passionné par la conception d'experiences ludiques et de récits interactifs. Je transforme des idées en expériences jouables mémorables.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+        <a href="#contact" class="btn btn-ghost">Me contacter</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ===================== À PROPOS ===================== -->
+  <section id="about">
+    <div class="about-grid reveal">
+      <div class="about-text">
+        <p class="section-label">// À propos</p>
+        <h2 class="section-title" style="margin-bottom:1.5rem;">Qui<br>suis-je ?</h2>
+        <p>Bien le bonjour, je m'appelle Maxime.</p>
+        <p>Je suis ingénieur informatique spécialisé pour le jeu vidéo et ce qui me plait par dessus tout dans ce milieu, c'est la partie design et création des mécaniques de gameplay.</p>
+        <p>Véritable touche à tout, je m'intéresse aussi bien au jeu vidéo qu'au jeu de société, ainsi qu'a l'écriture non linéaire comme les jeux de roles et les escapes games.</p>
+        <div class="skills-tags">
+          <span class="tag">Unity</span>
+          <span class="tag">Unreal Engine</span>
+          <span class="tag">Game Design</span>
+          <span class="tag">Prototyping</span>
+          <span class="tag">C#/Blueprint/C++</span>
+          <span class="tag">Git/Perforce</span>
+          <span class="tag">Playtesting</span>
+          <span class="tag">Narrative Design</span>
+        </div>
+      </div>
+      <div class="about-stats">
+        <div class="stat-box">
+          <div class="stat-num">12</div>
+          <div class="stat-label">Projets réalisés</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Game Jams gagnées</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">5+</div>
+          <div class="stat-label">Années de pratique</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">∞</div>
+          <div class="stat-label">Heures de R&D</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJETS ===================== -->
+  <section id="projects">
+    <div class="projects-header reveal">
+      <div>
+        <p class="section-label">// Projets</p>
+        <h2 class="section-title" style="margin-bottom:0;">Mes travaux</h2>
+      </div>
+      <a href="#contact" class="btn btn-ghost" style="margin-bottom: 0.5rem;">Collaborer →</a>
+    </div>
+
+    <div class="projects-grid reveal" id="projectsGrid">
+
+      <!-- PROJET 0 -->
+      <div class="card" onclick="openModal(0)">
+        <div class="card-img-placeholder" style="background: linear-gradient(135deg, #1a1a00 0%, #3d3d00 50%, #7a7a00 100%);">🏙️</div>
+        <div class="card-overlay"></div>
+        <div class="card-body">
+          <p class="card-genre">Simulation · Solo</p>
+          <h3 class="card-title">NeonCity Builder</h3>
+          <p class="card-desc">CJ'écris de la merde ici</p>
+          <div class="card-footer">
+            <div class="card-links">
+              <a href="#" class="card-link" onclick="event.stopPropagation()">itch.io ↗</a>
+              <a href="#" class="card-link" onclick="event.stopPropagation()">Devlog ↗</a>
+            </div>
+            <span class="card-year">2022</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-placeholder">
+        <div style="text-align:center; color: var(--muted);">
+          <div style="font-size:2rem; margin-bottom:0.8rem; opacity:0.3;">+</div>
+          <p style="font-family:'JetBrains Mono',monospace; font-size:0.65rem; letter-spacing:0.15em; text-transform:uppercase;">Prochain projet</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact">
+    <div class="contact-inner reveal">
+      <p class="section-label">// Contact</p>
+      <h2 class="section-title">Travaillons<br>ensemble !</h2>
+      <p class="contact-sub">Si vous souhaitez me contacter, n'hésitez pas !<br>Je serai ravi d'échanger avec vous.</p>
+      <div class="contact-links">
+        <a href="mailto:caillesmaxime@gmail.com" class="contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Email
+        </a>
+        <a href="https:www.linkedin.com/in/maxime-cailles" class="contact-item" target="_blank">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <!-- 🔧 Remplace "cv.pdf" par le chemin de ton vrai CV -->
+        <a href="files/CV_CAILLES_Maxime_GameDesigner.docx.pdf" class="contact-item" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Mon CV
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <p>© 2026 Maxime CAILLES — Game Designer</p>
+  </footer>
+
+  <!-- ===================== MODAL ===================== -->
+  <div class="modal-backdrop" id="modalBackdrop" onclick="closeModal(event)">
+    <div class="modal" id="modal">
+      <button class="modal-close" onclick="closeModalBtn()">✕</button>
+      <div id="modalImgContainer"></div>
+      <div class="modal-content">
+        <p class="modal-genre" id="modalGenre"></p>
+        <h2 class="modal-title" id="modalTitle"></h2>
+        <p class="modal-desc" id="modalDesc"></p>
+        <div class="modal-tags" id="modalTags"></div>
+        <div class="modal-footer" id="modalLinks"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
