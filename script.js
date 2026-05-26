@@ -15,36 +15,35 @@
 
 const projects = [
 
-  // ── PROJET 4 ──────────────────────────────────────────────
+  // ── Figdrasil
   {
-    title: "NeonCity Builder",
-    genre: "Simulation · Solo · Unity",
-    year: "2022",
-    desc: "City builder cyberpunk avec simulation économique et système de factions à réputation dynamique. Chaque décision urbaine impacte les relations entre 5 factions, créant des situations émergentes uniques. Projet personnel de R&D sur les systèmes complexes.",
-    tags: ["Unity", "Simulation", "Economy Design", "Faction System", "Emergent Design"],
-    image: null,
-    emoji: "🏙️",
+    title: "Figdrasil",
+    genre: "Duel tactique - Jeu de société",
+    year: "2025",
+    desc: "Jeu de sociéte pour deux joueurs. Incarnez des héros fruités pour prendre le controle de champs de bataille. Chaque héro possède ses propres pouvoirs, ses stratégies et ses forces.",
+    tags:  ["Jeu de société","Character Design","Game Design","Prototypage","Equilibrage"],
+    image: "files/figdrasil-logo.png",
     bg: "linear-gradient(135deg, #1a1a00, #3d3d00, #7a7a00)",
     links: [
-      { label: "itch.io ↗", href: "#" },
-      { label: "Devlog ↗",  href: "#" }
+      { label: "Prototype en ligne", href: "https://screentop.gg/@Benderking/Figdrasil" },
+    ]
+  },
+
+  {
+  title: "Toys R Me",
+    genre: "Casse-tête - Die & Retry",
+    year: "2026",
+    desc: "Controlez Luc, le fils de Lucifer en personne, à la recherche de son doudou pour s'endormir. Transférez votre âme de jouent en jouet aux différents pouvoirs pour attendre votre objectif.",
+    tags:  ["Game Jam","Game Design","UI Design","Programmation"],
+    image: "files/ToysRMe.png",
+    bg: "linear-gradient(135deg, #1a1a00, #3d3d00, #7a7a00)",
+    links: [
+      { label: "Lien Itch.io", href: "https://maxcailles.itch.io/toysrme" },
     ]
   }
 
-  // ── AJOUTE TES PROCHAINS PROJETS ICI ──────────────────────
-  // N'oublie pas la virgule après le } du projet précédent !
-  // Exemple :
-  // ,{
-  //   title: "Mon Nouveau Jeu",
-  //   genre: "FPS · Équipe · Unreal",
-  //   year: "2025",
-  //   desc: "Description complète pour la modale...",
-  //   tags: ["Unreal", "FPS", "Level Design"],
-  //   image: "images/monjeU.png",  // ou null + emoji
-  //   emoji: "🎯",
-  //   bg: "linear-gradient(135deg, #1a0000, #3d0000, #7a0000)",
-  //   links: [{ label: "itch.io ↗", href: "https://..." }]
-  // }
+
+
 
 ];
 
